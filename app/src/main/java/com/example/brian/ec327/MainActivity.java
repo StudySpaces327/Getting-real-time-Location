@@ -44,8 +44,6 @@ public class MainActivity extends AppCompatActivity
         });
     }
 
-
-
     //Method for checking the Version
     public boolean isServicesOK()
     {
