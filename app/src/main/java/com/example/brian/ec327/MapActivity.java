@@ -20,6 +20,7 @@ import com.google.android.gms.maps.SupportMapFragment;
  * Created by Brian on 11/28/2017.
  */
 
+//Opens the map and outputs "Map Opened Successfully" if opened successfully
 public class MapActivity extends AppCompatActivity implements OnMapReadyCallback {
     @Override
     public void onMapReady(GoogleMap googleMap) {
@@ -59,6 +60,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
             if (ContextCompat.checkSelfPermission(this.getApplicationContext(),
                     COURSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
                 mLocationPermissionsGranted = true;
+                initMap();
             }else{
                 ActivityCompat.requestPermissions(this,permissions,LOCATION_PERMISSION_REQUEST_CODE);
             }
