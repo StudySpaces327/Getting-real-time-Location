@@ -1,3 +1,5 @@
+//MainActivity 
+
 package com.example.brian.ec327;
 
 import android.app.Dialog;
